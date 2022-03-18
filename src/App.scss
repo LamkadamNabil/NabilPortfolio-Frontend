@@ -10,6 +10,9 @@
 .app__primarybg {
   background-color: var(--primary-color);
 }
+.app__graybg {
+  background-color: rgb(216, 216, 216);
+}
 
 .app__container {
   width: 100%;
@@ -70,7 +73,25 @@
     font-size: 2rem;
   }
 }
+.head-text1 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--black-color);
+  text-transform: capitalize;
 
+  span {
+    color: var(--secondary-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
 .p-text {
   font-size: 0.8rem;
   text-align: left;
@@ -126,8 +147,8 @@
     }
 
     &:hover {
-      background-color: var(--secondary-color);
-      border-color: var(--secondary-color);
+      background-color: #42CCFF;
+      border-color: gray;
 
       svg {
         color: var(--white-color);

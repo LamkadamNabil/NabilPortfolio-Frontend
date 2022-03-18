@@ -34,6 +34,41 @@
     @media screen and (max-width: 450px) {
       padding: 6rem 1rem 2rem;
     }
+    button {
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      border: none;
+      background-color: rgb(33, 187, 187);
+      text-decoration: none;
+      font-weight: 500;
+      color: var(--white-color);
+      outline: none;
+      margin: 2rem 0 0 0;
+      font-family: var(--font-base);
+  
+      transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #969ba5;
+      }
+      a{
+                text-decoration: none;
+
+      }
+    }
+    .p-text1{
+      
+        font-size: 0.8rem;
+        text-align: left;
+        color: var(--gray-color);
+        line-height: 1.5;
+      
+        @media screen and (min-width: 2000px) {
+          font-size: 1.75rem;
+        }
+  
+    }
   }
   
   .app__header-info {
@@ -76,13 +111,21 @@
   
       p {
         width: 100%;
+        font-size: 1rem;
         text-transform: uppercase;
-        text-align: right;
+        text-align: center;
       }
     }
   
     span {
       font-size: 2.5rem;
+  
+      @media screen and (min-width: 2000px) {
+        font-size: 5rem;
+      }
+    }
+    .tag-span{
+      font-size: 1.5rem;
   
       @media screen and (min-width: 2000px) {
         font-size: 5rem;
@@ -123,17 +166,20 @@
     div:nth-child(1) {
       width: 100px;
       height: 100px;
+      z-index: 12;
     }
   
     div:nth-child(2) {
       margin: 1.75rem;
       width: 150px;
       height: 150px;
+      z-index: 12;
     }
   
     div:nth-child(3) {
       width: 70px;
       height: 70px;
+      z-index: 12;
     }
   
     @media screen and (min-width: 2000px) {
