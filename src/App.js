@@ -6,9 +6,10 @@ function App() {
     <div className="app">
     <Navbar />
     <Header />
-    <About />
+ 
     <Work />
-    <Skills />
+    <Skills /> 
+    <About />
     {/*<Testimonial />*/}
     <Footer />
   </div>
